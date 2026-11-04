@@ -134,6 +134,15 @@ ul,ol{margin:0;padding:0;list-style:none}
 .group-table td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--muted)}
 .group-table td:first-child{color:var(--navy);font-weight:600;white-space:nowrap}
 
+/* ---------- engineering ---------- */
+.eng-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0 26px}
+.eng-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px 22px}
+.eng-card b{display:block;font-size:32px;color:var(--navy);line-height:1;letter-spacing:-.03em}
+.eng-card span{display:block;font-size:12.5px;color:var(--muted);margin-top:10px;line-height:1.5}
+.disclaim{font-size:12.8px;color:#4E5C69;border-left:3px solid var(--line);padding-left:14px;
+  margin-top:26px;max-width:68ch}
+#engineering p{max-width:68ch}
+
 /* ---------- range ---------- */
 .range-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
 .range-card{
@@ -233,6 +242,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 }
 @media (max-width:720px){
   .plant-grid{grid-template-columns:1fr}
+  .eng-grid{grid-template-columns:1fr}
   .group-table th:nth-child(3),.group-table td:nth-child(3){display:none}
   .nav{
     position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);
