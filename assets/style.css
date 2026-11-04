@@ -106,6 +106,21 @@ ul,ol{margin:0;padding:0;list-style:none}
   border-radius:50%;background:var(--cyan)}
 .pillar-buyers{font-size:13px;color:var(--muted);margin:0;border-top:1px solid var(--line);padding-top:16px}
 
+/* ---------- origin / stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:40px 0 8px;
+  border-top:2px solid var(--navy);border-bottom:1px solid var(--line)}
+.stats div{padding:22px 20px 22px 0;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font-size:clamp(26px,3.2vw,38px);color:var(--navy);line-height:1;letter-spacing:-.03em}
+.stats span{display:block;font-size:12.5px;color:var(--muted);margin-top:8px;line-height:1.45}
+.origin{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start;margin-top:16px}
+.origin h3{font-size:19px;color:var(--navy);margin:0 0 10px}
+.origin p{font-size:14.5px;color:var(--muted)}
+.origin .pill-note{background:#fff;border:1px solid var(--line);border-left:3px solid var(--cyan);
+  border-radius:8px;padding:18px 20px;font-size:13.5px;color:var(--ink);margin-top:18px}
+.origin .pill-note strong{color:var(--navy)}
+.source-note{font-size:11.5px;color:#8A98A5;margin-top:22px}
+
 /* ---------- range ---------- */
 .range-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
 .range-card{
@@ -194,6 +209,10 @@ ul,ol{margin:0;padding:0;list-style:none}
 /* ---------- responsive ---------- */
 @media (max-width:960px){
   .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stats div:nth-child(2){border-right:0}
+  .stats div:nth-child(1),.stats div:nth-child(2){border-bottom:1px solid var(--line)}
+  .origin{grid-template-columns:1fr;gap:32px}
   .hero-panel{order:2}
   .range-grid{grid-template-columns:1fr 1fr}
   .steps{grid-template-columns:1fr 1fr}
