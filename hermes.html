@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes — Private Personal Assistant</title>
+<meta name="description" content="Hermes is a private, single-user automation tool that works inside one Google Account on its owner's explicit instructions.">
+<meta name="robots" content="index,follow">
+<style>
+  :root { --ink:#1a1c1e; --muted:#5c6470; --line:#e3e6ea; --bg:#fff; --accent:#0b5cad; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:56px 24px 80px; }
+  h1 { font-size:1.9rem; line-height:1.25; margin:0 0 8px; letter-spacing:-.01em; }
+  h2 { font-size:1.15rem; margin:34px 0 10px; }
+  .meta { color:var(--muted); font-size:.9rem; margin:0 0 30px; }
+  ul { padding-left:1.2em; } li { margin:6px 0; }
+  .box { border:1px solid var(--line); border-radius:10px; padding:16px 20px; margin:26px 0; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; padding-top:18px; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.88rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hermes — Private Personal Assistant</h1>
+  <p class="meta">Single-user automation for one Google Account · operated by Link Point Trading (Hong Kong) Limited</p>
+
+  <h2>What this application is</h2>
+  <p>Hermes is a private desktop automation tool. It runs on its owner's own Mac and performs work the owner asks for directly — for example scheduling a meeting on the owner's calendar, triaging an inbox, or updating one of the owner's spreadsheets.</p>
+  <p>It is <strong>not</strong> a public product. There is no sign-up, no dashboard, no multi-user service, and it is not distributed to anyone. It has exactly one user: the person who owns the Google Account that authorises it.</p>
+
+  <h2>What it does with Google data</h2>
+  <ul>
+    <li><strong>Calendar</strong> — lists and creates events on the owner's own calendar at the owner's request.</li>
+    <li><strong>Gmail</strong> — reads, searches, labels, drafts and sends mail only when the owner instructs it to. Nothing is sent without the owner's approval of that specific message.</li>
+    <li><strong>Drive, Sheets, Docs</strong> — locates, reads and edits the owner's own files to produce requested documents and reports.</li>
+    <li><strong>Contacts</strong> — read-only, used to resolve a name to an email address.</li>
+  </ul>
+  <p>Access is granted through Google's standard OAuth 2.0 consent screen, scope by scope. The owner can revoke it at any time.</p>
+
+  <div class="box">
+    <strong>What it never does:</strong> no advertising, no profiling, no resale of data, no lending or creditworthiness determinations, no training of generalised models on Google user data.
+  </div>
+
+  <h2>Where the data lives</h2>
+  <p>OAuth tokens and working files stay on the owner's own machine with owner-only file permissions. There is no remote application server holding Google user data.</p>
+
+  <h2>More information</h2>
+  <p>Full detail on data handling, retention and revocation is in the <a href="/privacy.html">Privacy Policy</a>.</p>
+  <p>Questions: <a href="mailto:sales@link-point.org">sales@link-point.org</a></p>
+
+  <footer>
+    <a href="/">link-point.org</a> · <a href="/privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
